@@ -1,0 +1,13 @@
+alias gb='git branch'
+alias gba='git branch -a'
+alias gs='git status'
+alias ga='git add'
+alias gd='git diff'
+alias gdc='git diff --cached'
+alias grhh='git reset --hard HEAD'
+alias grsh='git reset --soft HEAD'
+alias grs='git restore --staged'
+alias grv='git remote -v'
+alias gl='git log'
+alias gl1="git log --pretty='format:%C(yellow)%h %C(green)%cd %C(reset)%s %C(red)%d %C(cyan)[%an]' --date=iso"
+alias gcm='git commit -m'
