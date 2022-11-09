@@ -1,5 +1,5 @@
-以下のコードを~/.zprofileなどに記載すると、~/.zshディレクトリにある.zshファイルを読み込むようになる
-SlackへのWebhook URLはgitで管理しないため、~/.zprofileなどに入れておく
+以下のコードを`~/.zprofile`などに記載すると、`~/.zsh`ディレクトリにある.zshファイルを読み込むようになる
+SlackへのWebhook URLはgitで管理しないため、`~/.zprofile`などに入れておく
 
 
 ```~/.zprofile
