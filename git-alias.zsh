@@ -1,5 +1,6 @@
 alias gb='git branch'
 alias gba='git branch -a'
+alias gbd='git branch -d'
 alias gs='git status'
 alias ga='git add'
 alias gd='git diff'
@@ -11,3 +12,4 @@ alias grv='git remote -v'
 alias gl='git log'
 alias gl1="git log --pretty='format:%C(yellow)%h %C(green)%cd %C(reset)%s %C(red)%d %C(cyan)[%an]' --date=iso"
 alias gcm='git commit -m'
+alias gs-='git switch -'
