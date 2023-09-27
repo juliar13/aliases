@@ -1,8 +1,12 @@
 alias tfa='terraform apply'
-alias tfi='terraform init'
-alias tfs='terraform show'
-alias tfp='terraform plan'
 alias tfd='terraform destroy'
+alias tff='terraform fmt'
+alias tffr='terraform fmt -recursive'
+alias tfi='terraform init'
+alias tfp='terraform plan'
+alias tfs='terraform state'
+alias tfsl='terraform state list'
+alias tfss='terraform state show'
 alias tfv='terraform validate'
 
 function tfw() {
@@ -44,3 +48,4 @@ function tfdv() {
 function tfiv() {
   terraform import -var-file=$@
 }
+
