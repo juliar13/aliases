@@ -1,17 +1,24 @@
+alias tf='terraform'
+
 alias tfa='terraform apply'
+
 alias tfd='terraform destroy'
+
 alias tff='terraform fmt'
 alias tffr='terraform fmt -recursive'
+
 alias tfi='terraform init'
+
+alias tfo='terraform output'
+
 alias tfp='terraform plan'
+
 alias tfs='terraform state'
 alias tfsl='terraform state list'
+alias tfsp='terraform state pull >'
 alias tfss='terraform state show'
-alias tfv='terraform validate'
 
-function tfw() {
-  terraform workspace $@
-}
+alias tfv='terraform validate'
 
 function tfirb() {
   terraform init -reconfigure -backend-config=$1
