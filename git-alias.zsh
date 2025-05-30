@@ -10,6 +10,7 @@ alias gd='git diff'
 alias gdc='git diff --cached'
 
 alias gfa='git fetch --all'
+alias aaaa='aaaa'
 
 alias gl='git log'
 alias gl1="git log --pretty='format:%C(yellow)%h %C(green)%cd %C(reset)%s %C(red)%d %C(cyan)[%an]' --date=iso"
