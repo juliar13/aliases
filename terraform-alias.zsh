@@ -7,16 +7,25 @@ alias tfd='terraform destroy'
 alias tff='terraform fmt'
 alias tffr='terraform fmt -recursive'
 
+# terraform init
 alias tfi='terraform init'
+alias tfimc='terraform init -migrate-state'
+alias tfirc='terraform init -reconfigure'
 
 alias tfo='terraform output'
 
+# terraform plan
 alias tfp='terraform plan'
+alias tfpnc='terraform plan -no-color >'
 
+# terraform state
 alias tfs='terraform state'
 alias tfsl='terraform state list'
 alias tfsp='terraform state pull >'
 alias tfss='terraform state show'
+
+# terraform test
+alias tft='terraform test'
 
 alias tfv='terraform validate'
 
