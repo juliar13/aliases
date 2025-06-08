@@ -12,4 +12,3 @@ function chprof() {
 
 alias awsconf='cat ~/.aws/config'
 alias awscred='cat ~/.aws/credentials'
-
