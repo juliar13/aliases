@@ -9,4 +9,6 @@ fi
 alias sshconf='cat ~/.ssh/config'
 
 # pre-commit
-alias pcra='pre-commit run -a'
+if type pre-commit &> /dev/null; then
+  alias pcra='pre-commit run -a'
+fi
