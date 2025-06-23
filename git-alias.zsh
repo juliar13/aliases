@@ -5,6 +5,7 @@ alias gba='git branch -a'
 alias gbd='git branch -d'
 
 alias gcm='git commit -m'
+alias gcam='git commit --amend -m'
 
 alias gd='git diff'
 alias gdc='git diff --cached'
@@ -26,6 +27,9 @@ alias gs='git status'
 alias gsw='git switch'
 alias gsw-='git switch -'
 alias gswc='git switch -c'
+alias gswd='git switch develop'
+alias gswm='git switch main'
+alias gswr='git switch release'
 
 alias gtam='git tag -am'
 alias gtn='git tag -n'
