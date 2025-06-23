@@ -1,9 +1,13 @@
-以下のコードを`~/.zprofile`などに記載すると、`~/.zsh`ディレクトリにある.zshファイルを読み込むようになる
-SlackへのWebhook URLはgitで管理しないため、`~/.zprofile`などに入れておく
+# Aliases Collection 🛠️
 
+様々な開発ツールのエイリアス集です。
 
-```~/.zprofile
+## セットアップ 🚀
 
+以下のコードを`~/.zprofile`などに記載すると、`~/.zsh`ディレクトリにある.zshファイルを読み込むようになります。
+SlackへのWebhook URLはgitで管理しないため、`~/.zprofile`などに入れておいてください。
+
+```bash
 export SLACK_WEBHOOK_URL=xxx
 
 ############################
@@ -19,6 +23,7 @@ if [ -d $SHELL_ALIAS_HOME -a -r $SHELL_ALIAS_HOME -a \
             [ \( -f $i -o -h $i \) -a -r $i ] && . $i
         echo $i
     done
+fi
 ```
 
 ## AWS
