@@ -1,5 +1,7 @@
+# AWS CLI
 alias asgci='aws sts get-caller-identity'
 
+# AWS Functions
 function chprof() {
   echo "Before) AWS_DEFUALT_PROFILE/AWS_PROFILE:" ${AWS_DEFAULT_PROFILE} / ${AWS_PROFILE}
   export AWS_DEFAULT_PROFILE=$1
@@ -7,8 +9,3 @@ function chprof() {
   echo "After ) AWS_DEFUALT_PROFILE/AWS_PROFILE:" $1 / $1
   asgci
 }
-
-# Config
-
-alias awsconf='cat ~/.aws/config'
-alias awscred='cat ~/.aws/credentials'
