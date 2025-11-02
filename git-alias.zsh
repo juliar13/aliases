@@ -6,6 +6,9 @@ alias gb='git branch'
 alias gba='git branch -a'
 alias gbd='git branch -d'
 
+# git checkout
+alias gco='git checkout'
+
 # git commit
 alias gcm='git commit -m'
 alias gcam='git commit --amend -m'
@@ -23,10 +26,10 @@ alias gl1="git log --pretty='format:%C(yellow)%h %C(green)%cd %C(reset)%s %C(red
 
 # git reset
 alias grhh='git reset --hard HEAD'
-alias grsh='git reset --soft HEAD'
 
 # git restore
-alias grs='git restore --staged'
+alias grs='git restore'
+alias grss='git restore --staged'
 
 # git remote
 alias grv='git remote -v'
@@ -41,9 +44,7 @@ alias gs='git status'
 alias gsw='git switch'
 alias gsw-='git switch -'
 alias gswc='git switch -c'
-alias gswd='git switch develop'
 alias gswm='git switch main'
-alias gswr='git switch release'
 
 # git tag
 alias gtam='git tag -am'
