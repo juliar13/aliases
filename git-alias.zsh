@@ -31,6 +31,9 @@ alias grs='git restore --staged'
 # git remote
 alias grv='git remote -v'
 
+# git push
+alias gpd='git push -d'
+
 # git status
 alias gs='git status'
 
