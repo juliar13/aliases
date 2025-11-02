@@ -1,35 +1,34 @@
-if type terraform &> /dev/null; then
-  alias tf='terraform'
+alias tf='terraform'
 
-  alias tfa='terraform apply'
+alias tfa='terraform apply'
 
-  alias tfd='terraform destroy'
+alias tfd='terraform destroy'
 
-  alias tff='terraform fmt'
-  alias tffr='terraform fmt -recursive'
+alias tff='terraform fmt'
+alias tffr='terraform fmt -recursive'
 
-  # terraform init
-  alias tfi='terraform init'
-  alias tfimc='terraform init -migrate-state'
-  alias tfirc='terraform init -reconfigure'
+# terraform init
+alias tfi='terraform init'
+alias tfimc='terraform init -migrate-state'
+alias tfirc='terraform init -reconfigure'
 
-  alias tfo='terraform output'
+alias tfo='terraform output'
 
-  # terraform plan
-  alias tfp='terraform plan'
-  alias tfpnc='terraform plan -no-color >'
+# terraform plan
+alias tfp='terraform plan'
+alias tfpnc='terraform plan -no-color >'
 
-  # terraform state
-  alias tfs='terraform state'
-  alias tfsl='terraform state list'
-  alias tfsp='terraform state pull >'
-  alias tfss='terraform state show'
+# terraform state
+alias tfs='terraform state'
+alias tfsl='terraform state list'
+alias tfsp='terraform state pull >'
+alias tfss='terraform state show'
 
-  # terraform test
-  alias tft='terraform test'
+# terraform test
+alias tft='terraform test'
 
-  alias tfv='terraform validate'
-fi
+# terraform validate
+alias tfv='terraform validate'
 
 function tfirb() {
   terraform init -reconfigure -backend-config=$1
