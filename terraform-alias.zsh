@@ -21,7 +21,7 @@ alias tfpnc='terraform plan -no-color >'
 # terraform state
 alias tfs='terraform state'
 alias tfsl='terraform state list'
-alias tfsp='terraform state pull >'
+alias tfsp='terraform state pull'
 alias tfss='terraform state show'
 
 # terraform test
@@ -29,7 +29,7 @@ alias tft='terraform test'
 
 # terraform validate
 alias tfv='terraform validate'
-
+# Terraform Functions
 function tfirb() {
   terraform init -reconfigure -backend-config=$1
 }
@@ -65,4 +65,3 @@ function tfdv() {
 function tfiv() {
   terraform import -var-file=$@
 }
-
