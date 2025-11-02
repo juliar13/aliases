@@ -27,6 +27,7 @@ alias tfss='terraform state show'
 # terraform test
 alias tft='terraform test'
 
+# terraform validate
 alias tfv='terraform validate'
 
 function tfirb() {
