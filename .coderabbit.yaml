@@ -1,0 +1,144 @@
+# CodeRabbit configuration file
+# AI-powered code review tool settings
+
+# Language settings
+language: ja
+
+# Review settings
+reviews:
+  # Request changes threshold
+  request_changes_workflow: true
+
+  # Auto-approve settings
+  auto_approve:
+    enabled: false
+
+  # Review scope
+  review_scope:
+    - "**/*.py"
+    - "**/*.js"
+    - "**/*.html"
+    - "**/*.css"
+    - "**/*.md"
+    - "**/*.yaml"
+    - "**/*.yml"
+    - "**/*.json"
+    - "**/*.toml"
+
+  # Exclude patterns
+  exclude:
+    - "node_modules/**"
+    - "venv/**"
+    - "env/**"
+    - "__pycache__/**"
+    - "*.pyc"
+    - ".git/**"
+    - "data/**"
+    - "static/uploads/**"
+    - "*.log"
+
+# AI review preferences
+ai:
+  # Focus areas for AI review
+  focus_areas:
+    - security
+    - performance
+    - maintainability
+    - code_quality
+    - best_practices
+    - error_handling
+    - documentation
+
+  # Review style
+  review_style: constructive
+
+  # Severity levels to report
+  severity_levels:
+    - high
+    - medium
+    - low
+
+  # Language-specific settings
+  python:
+    check_pep8: true
+    check_security: true
+    check_performance: true
+    check_imports: true
+
+  javascript:
+    check_eslint: true
+    check_security: true
+    check_performance: true
+
+  html:
+    check_accessibility: true
+    check_semantics: true
+
+# Comment settings
+comments:
+  # Use Japanese for comments
+  language: ja
+
+  # Comment style
+  style: helpful
+
+  # Include code suggestions
+  include_suggestions: true
+
+  # Group related issues
+  group_similar_issues: true
+
+# Integration settings
+integrations:
+  # GitHub settings
+  github:
+    # Auto-request reviews
+    auto_request_review: true
+
+    # Label settings
+    labels:
+      add_labels: true
+      improvement: "improvement"
+      bug: "bug"
+      security: "security"
+      performance: "performance"
+      documentation: "documentation"
+
+# Custom rules for this project
+custom_rules:
+  # AI家計簿プロジェクト固有のルール
+  - name: "OCR処理のエラーハンドリング"
+    description: "OCR処理では適切なエラーハンドリングを行う"
+    pattern: "def.*ocr.*"
+    check: "exception_handling"
+
+  - name: "データベース操作のフォールバック"
+    description: "データベース操作にはローカルファイルへのフォールバックを実装"
+    pattern: "def.*database.*|def.*supabase.*"
+    check: "fallback_mechanism"
+
+  - name: "日本語メッセージの統一"
+    description: "エラーメッセージや完了メッセージに適切なアイコンを使用"
+    pattern: "print\\(.*エラー.*\\)|print\\(.*完了.*\\)|print\\(.*使用.*\\)"
+    check: "message_consistency"
+
+# Notification settings
+notifications:
+  # Slack integration (if needed)
+  slack:
+    enabled: false
+
+  # Email notifications
+  email:
+    enabled: false
+
+# Performance settings
+performance:
+  # Timeout for AI analysis (seconds)
+  analysis_timeout: 300
+
+  # Maximum file size to analyze (MB)
+  max_file_size: 10
+
+  # Concurrent analysis limit
+  max_concurrent_analysis: 3
