@@ -1,5 +1,7 @@
 # Directory Overview
 
+クレデンシャルは絶対に入れないでください。
+
 This directory contains a collection of Zsh aliases for various development tools. The aliases are organized into separate files based on the tool they are for (e.g., `git-alias.zsh`, `docker-alias.zsh`).
 
 # Key Files
