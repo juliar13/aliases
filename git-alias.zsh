@@ -38,7 +38,7 @@ alias grv='git remote -v'
 alias gpd='git push -d'
 
 # git status
-alias gs='git status'
+alias gs='git status --short --branch'
 
 # git switch
 alias gsw='git switch'
